@@ -8,16 +8,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: 2;
+    
+    
 }
 
+body{
+    font-family: Whitney, "helvetica neue, arial, helvetica,sans serif";
+    line-height: 1.7;
+}
 .d-flex{
     display: flex;
 }
 
 div ul li{
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .debug{
@@ -39,9 +43,16 @@ div ul li{
 
 .button{
     border-radius: 20px;
-    padding: 4px 6px;
+    padding: 10px 16px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
 }
 
+#big-black-button{
+    background-color: black;
+    color: white;
+}
 .f6{
     background-color:#f6f6f6;
 }
@@ -50,10 +61,13 @@ div ul li{
     justify-content: space-around;
 }
 
-header p{
-    font-size: 1.5em;
+header p, main p{
+    font-size: 1.2em;
 }
 
+.image img{
+    width: 100%;
+}
 /*header*/
 .hero h1{
     padding-bottom: 20px;
@@ -98,12 +112,17 @@ header .navbar ul li a{
     padding: 6px 10px;
     text-decoration: none;
     color: white;
-    
+}
+
+header .navbar ul li a:hover{
+    text-decoration: underline;
 }
    
 .navbar{
     padding: 20px;
 }
+
+
     /*main*/
 
 .container{
@@ -120,6 +139,7 @@ header .navbar ul li a{
 .content{
     width: 40%;
     gap: 30px;
+    padding: 20px;
 }
 
 .image{
@@ -129,9 +149,12 @@ header .navbar ul li a{
 .row-direction{
     flex-direction: row-reverse;
 }
-
 main h2{
     font-size: 2em;
+}
+
+main p{
+    font-size: 1.2em;
 }
 /*footer*/
 
@@ -175,4 +198,9 @@ footer h4{
     font-size: 1.2em;
     font-weight: 600;
     color: #7289da;
+}
+
+.wave{
+    width: 100%;
+    opacity: 0.03;
 }
